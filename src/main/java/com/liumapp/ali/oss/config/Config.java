@@ -1,4 +1,4 @@
-package com.liumapp.ali.config;
+package com.liumapp.ali.oss.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
