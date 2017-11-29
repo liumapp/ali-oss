@@ -1,8 +1,8 @@
 package com.liumapp.ali.oss;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.liumapp.ali.oss.config.OssConfig;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 /**
  * Created by liumapp on 9/28/17.
@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * home-page:http://www.liumapp.com
  */
 @Configuration
+@Import({OssConfig.class})
 public class Main {
 
 
