@@ -1,6 +1,8 @@
 package com.liumapp.ali.oss;
 
 import com.liumapp.ali.oss.config.OssConfig;
+import com.liumapp.ali.oss.utils.OssUtil;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
@@ -13,5 +15,9 @@ import org.springframework.context.annotation.Import;
 @Import({OssConfig.class})
 public class Main {
 
+    @Bean
+    private OssUtil ossUtil () {
+        return new OssUtil();
+    }
 
 }
