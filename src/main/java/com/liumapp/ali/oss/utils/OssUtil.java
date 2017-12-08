@@ -33,8 +33,8 @@ public class OssUtil {
      *
      * OssUtil ossUtil = new OssUtil();
      * ossUtil.uploadFile("test/test2.docx" , new File("./data/test0.docx"));
-     * @param key
-     * @param file
+     * @param key key
+     * @param file file
      */
     public void uploadFile(String key , File file) {
         if (ossClient == null) {
@@ -113,8 +113,8 @@ public class OssUtil {
      *
      * OssUtil ossUtil = new OssUtil();
      * ossUtil.downloadFile("test/test0.docx" , new File("./data/download.docx"));
-     * @param key
-     * @param file
+     * @param key key
+     * @param file file
      */
     public void downloadFile(String key , File file) {
         if (ossClient == null) {
@@ -133,7 +133,7 @@ public class OssUtil {
     /**
      * OssUtil oss = new OssUtil();
      * oss.deleteFile("sign/contract1510393411552.jpg");
-     * @param key
+     * @param key key
      */
     public void deleteFile(String key) {
         if (ossClient == null) {
