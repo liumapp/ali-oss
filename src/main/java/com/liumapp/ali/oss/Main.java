@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Import;
 public class Main {
 
     @Bean
-    private OssUtil ossUtil () {
+    public OssUtil ossUtil () {
         return new OssUtil();
     }
 
